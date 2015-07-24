@@ -7,10 +7,10 @@ function load_sub_fn()
     mp.msg.info("Searching subtitle")
     mp.osd_message("Searching subtitle")
     t = {}
-    t.args = {subl, "-q", "-s", "-l", "en", "--", mp.get_property("path")}
+    t.args = {subl, "download", "-s", "-l", "en", mp.get_property("path")}
     res = utils.subprocess(t)
     if res.status == 0 then
-        mp.commandv("rescan_external_files", "reselect") 
+        mp.command("sub_reload")
         mp.msg.info("Subtitle download succeeded")
         mp.osd_message("Subtitle download succeeded")
     else
