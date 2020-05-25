@@ -1,6 +1,9 @@
 # autosub-mpv
 --------------
 
+### Also checkout https://github.com/davidde/mpv-autosub wich seems better :smile: 
+
+
 Automatically download subtitles in mpv using subliminal.
 
 1. Install [subliminal](https://github.com/Diaoul/subliminal)
